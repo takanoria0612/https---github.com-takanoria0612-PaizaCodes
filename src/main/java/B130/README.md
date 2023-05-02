@@ -112,6 +112,6 @@ parallel()
 IntStreamの並列処理を有効にします。
 
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `#c5f015`
-![#c5f015](https://placehold.it/15/c5f015/000000?text=) `#c5f015`
+![#c5f015](https://placehold.it/15/c5f015/000000?text=paralell) `#c5f015`
 
 
