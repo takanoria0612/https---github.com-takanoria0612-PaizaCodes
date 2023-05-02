@@ -9,4 +9,5 @@ readBoard n = fmap (map (map (\c -> if c == '#' then 1 else 0))) (replicateM n g
 readBlock :: IO Block
 readBlock = fmap (map (map (\c -> if c == '#' then 1 else 0))) (replicateM 3 getLine)
 
+```
 という記述は
