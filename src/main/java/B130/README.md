@@ -111,4 +111,5 @@ IntStreamの各要素をIntegerオブジェクトにボクシングします。
 parallel()
 IntStreamの並列処理を有効にします。
 
+<span style="background-color:yellow">ハイライトしたいテキスト</span>
 
