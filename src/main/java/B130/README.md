@@ -72,12 +72,12 @@ int[][] block = IntStream.range(0, 3)
 ここでいう、`IntStream`　について深掘りして行きます。
 
 #### `IntStream` とは
-#####　IntStreamの後に続くよく使われるメソッドには、以下のようなものがあります。
+##### IntStreamの後に続くよく使われるメソッドには、以下のようなものがあります。
 
-`range(int startInclusive, int endExclusive)`
+1. `range(int startInclusive, int endExclusive)`
 指定された範囲の整数ストリームを生成します。startInclusiveからendExclusive-1までの整数が含まれます。
 
-`of(int... values)`
+2. `of(int... values)`
 指定された整数配列を要素として持つIntStreamを生成します。
 
 `map(IntUnaryOperator mapper)`
