@@ -44,7 +44,8 @@ rotateBlock block = [[block !! (2 - j) !! i | j <- [0 .. 2]] | i <- [0 .. 2]]
 
 
 ```
-
+一つ一つ見て行きます。
+まず、
 ```haskell
 readBoard :: Int -> IO Board
 readBoard n = fmap (map (map (\c -> if c == '#' then 1 else 0))) (replicateM n getLine)
@@ -54,3 +55,16 @@ readBlock = fmap (map (map (\c -> if c == '#' then 1 else 0))) (replicateM 3 get
 
 ```
 という記述は
+
+```Java
+int[][] board = IntStream.range(0, N)
+                         .mapToObj(i -> scanner.nextLine().chars().map(c -> c == '#' ? 1 : 0).toArray())
+                         .toArray(int[][]::new);
+
+
+int[][] block = IntStream.range(0, 3)
+                         .mapToObj(i -> scanner.nextLine().chars().map(c -> c == '#' ? 1 : 0).toArray())
+                         .toArray(int[][]::new);
+
+```
+にそれぞれ対応しています。
