@@ -111,7 +111,7 @@ IntStreamの各要素をIntegerオブジェクトにボクシングします。
 parallel()
 IntStreamの並列処理を有効にします。
 
-<span style="background-color:yellow">ハイライトしたいテキスト</span>
-<a style="background-color:yellow">ハイライトしたいテキスト</a>
+![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `#c5f015`
+![#c5f015](https://placehold.it/15/c5f015/000000?text=) `#c5f015`
 
 
