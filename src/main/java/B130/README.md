@@ -69,4 +69,36 @@ int[][] block = IntStream.range(0, 3)
 ```
 にそれぞれ対応しています。
 
-ここでいう、`#ffce44``IntStream`　について深掘りして行きます。
+ここでいう、`IntStream`　について深掘りして行きます。
+
+#### `IntStream` とは
+#####　IntStreamの後に続くよく使われるメソッドには、以下のようなものがあります。
+
+`range(int startInclusive, int endExclusive)`
+指定された範囲の整数ストリームを生成します。startInclusiveからendExclusive-1までの整数が含まれます。
+
+`of(int... values)`
+指定された整数配列を要素として持つIntStreamを生成します。
+
+`map(IntUnaryOperator mapper)`
+IntStreamの各要素に対して、指定された関数を適用します。
+
+`filter(IntPredicate predicate)`
+IntStreamの要素のうち、指定された条件を満たす要素のみを抽出します。
+
+sum()
+IntStreamの全要素の合計を返します。
+
+average()
+IntStreamの全要素の平均値を返します。
+
+toArray()
+IntStreamをint型の配列に変換します。
+
+boxed()
+IntStreamの各要素をIntegerオブジェクトにボクシングします。
+
+parallel()
+IntStreamの並列処理を有効にします。
+
+
