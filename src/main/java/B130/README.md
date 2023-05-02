@@ -68,3 +68,5 @@ int[][] block = IntStream.range(0, 3)
 
 ```
 にそれぞれ対応しています。
+
+ここでいう、<span style="color:red">　`IntStream`　</span> について深掘りして行きます。
