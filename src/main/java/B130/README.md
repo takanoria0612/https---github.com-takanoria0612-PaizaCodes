@@ -75,13 +75,16 @@ int[][] block = IntStream.range(0, 3)
 ##### IntStreamの後に続くよく使われるメソッドには、以下のようなものがあります。
 
 1. `range(int startInclusive, int endExclusive)`
+
 指定された範囲の整数ストリームを生成します。startInclusiveからendExclusive-1までの整数が含まれます。
 
 2. `of(int... values)`
+
 指定された整数配列を要素として持つIntStreamを生成します。
 
-`map(IntUnaryOperator mapper)`
-IntStreamの各要素に対して、指定された関数を適用します。
+3. `map(IntUnaryOperator mapper)`
+
+`IntStream` の各要素に対して、指定された関数を適用します。
 
     例　`IntStream.range(1, 6).map(i -> i * i).forEach(System.out::println);`
         1から5までの整数を持つIntStreamを生成し、各要素を2乗して出力するコードです。
