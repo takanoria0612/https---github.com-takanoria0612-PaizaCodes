@@ -74,15 +74,15 @@ int[][] block = IntStream.range(0, 3)
 #### `IntStream` とは
 ##### IntStreamの後に続くよく使われるメソッドには、以下のようなものがあります。
 
-1. `range(int startInclusive, int endExclusive)`
+1. `range(int startInclusive, int endExclusive)`<br>
 
 指定された範囲の整数ストリームを生成します。startInclusiveからendExclusive-1までの整数が含まれます。
 
-2. `of(int... values)`
+2. `of(int... values)`<br>
 
 指定された整数配列を要素として持つIntStreamを生成します。
 
-3. `map(IntUnaryOperator mapper)`
+3. `map(IntUnaryOperator mapper)`　<br>
 
 `IntStream` の各要素に対して、指定された関数を適用します。
 
@@ -93,7 +93,7 @@ int[][] block = IntStream.range(0, 3)
 
 具体的には、`i * i`という式がラムダ式内に記述されており、この式は、`IntStream`の各要素を2乗して変換する処理を行います。この処理によって、`IntStream.range(1, 6)`で生成された`IntStream`の要素は、1, 4, 9, 16, 25となります。
 
-`filter(IntPredicate predicate)`
+`filter(IntPredicate predicate)`　<br>
 `IntStream`の要素のうち、指定された条件を満たす要素のみを抽出します。
 
 sum()
