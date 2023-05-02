@@ -83,8 +83,15 @@ int[][] block = IntStream.range(0, 3)
 `map(IntUnaryOperator mapper)`
 IntStreamの各要素に対して、指定された関数を適用します。
 
+    例　`IntStream.range(1, 6).map(i -> i * i).forEach(System.out::println);`
+        1から5までの整数を持つIntStreamを生成し、各要素を2乗して出力するコードです。
+
+ここで、`map()`メソッドに渡されるラムダ式は、`IntUnaryOperator`型の関数を表します。このラムダ式の引数は、`IntStream`の各要素である整数値iです。iを2乗して、新しい整数値を返す処理が記述されています。
+
+具体的には、`i * i`という式がラムダ式内に記述されており、この式は、`IntStream`の各要素を2乗して変換する処理を行います。この処理によって、`IntStream.range(1, 6)`で生成された`IntStream`の要素は、1, 4, 9, 16, 25となります。
+
 `filter(IntPredicate predicate)`
-IntStreamの要素のうち、指定された条件を満たす要素のみを抽出します。
+`IntStream`の要素のうち、指定された条件を満たす要素のみを抽出します。
 
 sum()
 IntStreamの全要素の合計を返します。
